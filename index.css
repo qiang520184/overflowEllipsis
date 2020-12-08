@@ -1,0 +1,35 @@
+.wrap {
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+  }
+  .wrap .text {
+    float: right;
+    margin-left: -5px;
+    width: 100%;
+    word-break: break-all;
+  }
+  .wrap::before {
+    float: left;
+    width: 5px;
+    content: '';
+    height: 60px;
+    /* background: skyblue; */
+  }
+  .wrap::after {
+    float: right;
+    content: "...展开";
+    height: 20px;
+    line-height: 20px;
+    /* 为三个省略号的宽度 */
+    width: 80px;
+    /* 使盒子不占位置 */
+    margin-left: -80px;
+    /* 移动省略号位置 */
+    position: relative;
+    left: 100%;
+    top: -20px;
+    padding-right: 5px;
+    background: pink;
+    color: yellow;
+  }
